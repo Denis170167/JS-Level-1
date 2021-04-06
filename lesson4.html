@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_4</title>
+</head>
+<body>
+    <h1>Задание 1</h1>
+<script>
+"use strict"
+let i = 0;
+while (i < 100) {
+    if (isPrimeNumber(i)){
+        console.log(i);
+    }
+    i++;
+
+
+function isPrimeNumber(number) {
+    if (number < 2)
+    return false;
+}
+
+for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i == 0) {
+        return false;
+    }
+}
+
+return true;
+
+}
+
+</script>
+
+<h1>Задание 2</h1>
+<script>
+  "use strict"
+  const basket = [
+      ['Ноут', 45000, 1],
+      ['Мышка', 1000, 2],
+  ];
+
+function countBasketPrice(basket) {
+    let totalPrice = 0;
+    for (let i = 0; i < basket.length; i++) {
+        totalPrice += basket[i][1] * basket[i][2];
+    }
+    return totalPrice;
+}
+
+console.log(countBasketPrice(basket));
+
+</script>
+
+
+    
+</body>
+</html>
